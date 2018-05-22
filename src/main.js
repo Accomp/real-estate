@@ -7,12 +7,14 @@ import router from './router';
 import {
   Vuetify,
   VApp,
-  VNavigationDrawer,
-  VFooter,
-  VList,
   VBtn,
-  VIcon,
+  VCheckbox,
+  VFooter,
+  VForm,
   VGrid,
+  VIcon,
+  VList,
+  VNavigationDrawer,
   VToolbar,
   transitions,
 } from 'vuetify';
@@ -21,12 +23,14 @@ import '../node_modules/vuetify/src/stylus/app.styl';
 Vue.use(Vuetify, {
   components: {
     VApp,
-    VNavigationDrawer,
-    VFooter,
-    VList,
     VBtn,
-    VIcon,
+    VCheckbox,
+    VFooter,
+    VForm,
     VGrid,
+    VIcon,
+    VList,
+    VNavigationDrawer,
     VToolbar,
     transitions,
   },
@@ -37,7 +41,7 @@ Vue.config.productionTip = false;
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  router,
   components: { App },
+  router,
   template: '<App/>',
 });
